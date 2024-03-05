@@ -62,6 +62,7 @@ data:
 
         server {
             listen 8185 default_server;
+            listen [::]:8185 default_server;
             root   /opt/chaos;
 
             location /health {
